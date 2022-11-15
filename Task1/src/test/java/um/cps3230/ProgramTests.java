@@ -124,7 +124,7 @@ public class ProgramTests {
     }
 
     @Test
-    public void testUpload5AlertsSuccessful() throws IOException {
+    public void testUpload5ValidAlerts() throws IOException {
         //Setup
         ResponseCodeGenerator responseCodeGenerator = Mockito.mock(ResponseCodeGenerator.class);
 
@@ -140,7 +140,7 @@ public class ProgramTests {
     }
 
     @Test
-    public void testUpload5AlertsUnsuccessful() throws IOException {
+    public void testUpload5InvalidAlerts() throws IOException {
         //Setup
         ResponseCodeGenerator responseCodeGenerator = Mockito.mock(ResponseCodeGenerator.class);
 
@@ -156,7 +156,7 @@ public class ProgramTests {
     }
 
     @Test
-    public void testUpload5AlertsUnsuccessfulBecauseUnexpectedErrorOccurred() throws IOException {
+    public void testUpload5AlertsWhenUnexpectedErrorOccurrs() throws IOException {
         //Setup
         UnexpectedErrorDetector unexpectedErrorDetector = Mockito.mock(UnexpectedErrorDetector.class);
 
@@ -172,7 +172,7 @@ public class ProgramTests {
     }
 
     @Test
-    public void testUpload5AlertsUnsuccessfulBecauseWebsiteIsDown() throws IOException {
+    public void testUpload5AlertsWhenWebsiteIsDown() throws IOException {
         //Setup
         WebsiteStatusProvider websiteStatusProvider = Mockito.mock(WebsiteStatusProvider.class);
 
