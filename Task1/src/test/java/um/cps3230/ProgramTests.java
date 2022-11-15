@@ -140,7 +140,7 @@ public class ProgramTests {
     }
 
     @Test
-    public void testUpload5InvalidAlerts() throws IOException {
+    public void testUpload0ValidAlerts() throws IOException {
         //Setup
         ResponseCodeGenerator responseCodeGenerator = Mockito.mock(ResponseCodeGenerator.class);
 
